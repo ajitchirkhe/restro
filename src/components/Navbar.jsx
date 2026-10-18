@@ -11,8 +11,10 @@ const Navbar = () => {
       setScrolled(window.scrollY > 10);
     };
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  console.log("hello");
 
   return (
     <>
@@ -105,4 +107,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
